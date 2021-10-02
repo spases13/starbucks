@@ -13,8 +13,6 @@ window.addEventListener("load", () => setTimeout(function () {
     loadingPage.style.display = 'none';
 }, 1000));
 
-console.log(roseThumb);
-
 
 greenThumb.addEventListener('mouseover', _ => {
     bigThumb.innerHTML = '<img src="images/img1.png" alt="bigStarbucks" class="img1">';
