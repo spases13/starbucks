@@ -9,9 +9,12 @@ const loadingPage = document.getElementById('loading-page')
 
 
 
-window.addEventListener('load', setInterval(_ => {
-    loadingPage.style.display = 'none'
+window.addEventListener("load", () => setTimeout(function () {
+    loadingPage.style.display = 'none';
 }, 1000));
+
+console.log(roseThumb);
+
 
 greenThumb.addEventListener('mouseover', _ => {
     bigThumb.innerHTML = '<img src="images/img1.png" alt="bigStarbucks" class="img1">';
@@ -19,6 +22,8 @@ greenThumb.addEventListener('mouseover', _ => {
     bigWord.style.color = '#296d51'
     LM.style.backgroundColor = '#296d51'
 });
+
+
 roseThumb.addEventListener('mouseover', _ => {
     bigThumb.innerHTML = '<img src="images/img2.png" alt="bigStarbucks"  class="img2">';
     circle.style.backgroundColor = '#CDBBA7'
